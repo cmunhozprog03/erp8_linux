@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\{
+    AddressCompanyController,
     CompanyController
 };
 use Illuminate\Support\Facades\Route;
@@ -21,3 +22,4 @@ Route::get('/', function () {
 });
 
 Route::resource('empresas', CompanyController::class);
+Route::resource('empresa-enderecos', AddressCompanyController::class);
