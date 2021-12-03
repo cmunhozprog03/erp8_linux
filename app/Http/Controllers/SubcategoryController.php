@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreSudcategoryRequest;
-use App\Http\Requests\UpdateSudcategoryRequest;
-use App\Models\Sudcategory;
+use App\Http\Requests\StoreSubcategoryRequest;
+use App\Http\Requests\UpdateSubcategoryRequest;
+use App\Models\Subcategory;
 
-class SudcategoryController extends Controller
+class SubcategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -31,10 +31,10 @@ class SudcategoryController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreSudcategoryRequest  $request
+     * @param  \App\Http\Requests\StoreSubcategoryRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreSudcategoryRequest $request)
+    public function store(StoreSubcategoryRequest $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class SudcategoryController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Sudcategory  $sudcategory
+     * @param  \App\Models\Subcategory  $subcategory
      * @return \Illuminate\Http\Response
      */
-    public function show(Sudcategory $sudcategory)
+    public function show(Subcategory $subcategory)
     {
         //
     }
@@ -53,10 +53,10 @@ class SudcategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Sudcategory  $sudcategory
+     * @param  \App\Models\Subcategory  $subcategory
      * @return \Illuminate\Http\Response
      */
-    public function edit(Sudcategory $sudcategory)
+    public function edit(Subcategory $subcategory)
     {
         //
     }
@@ -64,11 +64,11 @@ class SudcategoryController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateSudcategoryRequest  $request
-     * @param  \App\Models\Sudcategory  $sudcategory
+     * @param  \App\Http\Requests\UpdateSubcategoryRequest  $request
+     * @param  \App\Models\Subcategory  $subcategory
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateSudcategoryRequest $request, Sudcategory $sudcategory)
+    public function update(UpdateSubcategoryRequest $request, Subcategory $subcategory)
     {
         //
     }
@@ -76,10 +76,10 @@ class SudcategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Sudcategory  $sudcategory
+     * @param  \App\Models\Subcategory  $subcategory
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Sudcategory $sudcategory)
+    public function destroy(Subcategory $subcategory)
     {
         //
     }
