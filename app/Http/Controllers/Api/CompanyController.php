@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreCompanyRequest;
 use App\Models\Company;
 use Illuminate\Http\Request;
 
@@ -35,7 +36,7 @@ class CompanyController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreCompanyRequest $request)
     {
         $company = Company::create($request->all());
         return response()->json($company, 201);
@@ -85,6 +86,8 @@ class CompanyController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $company = Company::find($id);
+        $company->delete();
+        return response()->json(['msg' => 'Registro excluído com sucesso!']);
     }
 }
