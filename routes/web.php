@@ -27,3 +27,7 @@ Route::resource('empresa', CompanyController::class);
 Route::resource('empresa-enderecos', AddressCompanyController::class);
 Route::resource('categorias', CategoryController::class);
 Route::resource('subcategorias', SubcategoryController::class);
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
