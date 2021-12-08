@@ -12,4 +12,9 @@ class Company extends Model
     protected $guarded = ['id', 'created_at', 'updated_at'];
     //protected $fillable = ['social_name', 'fantasy_name', 'cnpj', 'ie', 'im',
     // 'logo', 'site', 'email', 'phone1', 'phone2', 'mobile'];
+
+    public function addressCompanies()
+    {
+        return $this->hasMany(AddressCompany::class);
+    }
 }
